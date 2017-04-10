@@ -3,6 +3,8 @@ A utility for Unity allowing you to assign scripts in the editor, and add them t
 
 
 # Usage
+Copy Assets/Plugins into your own Assets/Plugins
+
 Declare a field of the time ScriptReference, and use it at runtime:
 
 ```c#
