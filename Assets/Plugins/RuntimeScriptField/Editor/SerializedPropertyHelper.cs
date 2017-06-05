@@ -3,7 +3,7 @@ using System.Collections;
 using System.Reflection;
 using UnityEditor;
 
-namespace ScriptReferenceInner
+namespace RuntimeScriptField.Inner
 {
     public static class SerializedPropertyHelper
     {

@@ -8,7 +8,7 @@ using System;
 using UnityEngine;
 using Object = System.Object;
 
-namespace ScriptReferenceInner
+namespace RuntimeScriptField.Inner
 {
     [Serializable]
     public class SerializableSystemType
