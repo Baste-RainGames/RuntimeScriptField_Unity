@@ -32,7 +32,7 @@ namespace RuntimeScriptField.Example
     public class FooReference : ScriptReference<Foo> { }
 
     //I guess somebody might do this?
-    public class What_The_Face_Dude<T> : ScriptReference<T> { }
+    public class What_The_Face_Dude<T> : ScriptReference<T> where T : Component { }
 
     [System.Serializable]
     public class BarReference : What_The_Face_Dude<Bar> { }

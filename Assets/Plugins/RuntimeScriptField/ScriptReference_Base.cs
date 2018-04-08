@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace RuntimeScriptField.Inner {
     /// <summary>
     /// This only exists so we can have a drawer for all ScriptReference<T>'s. Don't inherit it,
