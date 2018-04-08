@@ -2,5 +2,5 @@
 
 namespace RuntimeScriptField.Example
 {
-	public class Foo : MonoBehaviour { }
+    public class Foo : MonoBehaviour { }
 }
