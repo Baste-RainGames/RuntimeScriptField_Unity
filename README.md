@@ -1,6 +1,11 @@
 # RuntimeScriptField_Unity
 A utility for Unity allowing you to assign scripts in the editor, and add them to game objects at runtime.
 
+# RuntimeScriptField_Unity #Package
+The package branch is setup to be used as UPM package, simply add the following line as a dependency in your project manifest.
+```json
+    "basteraingames.runtimescriptfieldunity": "https://github.com/ectogenousgames/RuntimeScriptField_Unity.git#package",
+```
 
 # Usage
 Copy Assets/Plugins into your own Assets/Plugins
