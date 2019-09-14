@@ -1,0 +1,10 @@
+{
+  "name": "basteraingames.runtimescriptfieldunity",
+  "displayName": "RuntimeScriptField_Unity",
+  "version": "1.0.0",
+  "description": "A utility for Unity allowing you to assign scripts in the editor, and add them to game objects at runtime.",
+  "author": {
+    "name": "Baste-RainGames"
+  },
+  "type": "library"
+}
