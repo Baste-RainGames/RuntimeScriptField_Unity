@@ -11,19 +11,26 @@ namespace RuntimeScriptField.Example
         [Header("You can assign any Component here")]
         public ComponentReference component;
         [Header("You can only assing things inheriting from Foo here")]
-        public FooReference foo;
+        public FooReference fooScript;
         [Header("You can only assing things inheriting from Bar here")]
-        public BarReference bar;
+        public BarReference barScript;
         [Header("Works with lists!")]
         public List<ComponentReference> components;
 
         void Start()
         {
-            gameObject.AddComponent(component.script);
-            gameObject.AddComponent(foo.script);
-            gameObject.AddComponent(bar.script);
+            var componentInstance = component.AddTo(gameObject);
+            Debug.Log("Added component " + componentInstance);
+
+            // You can also do gameObject.AddComponent(fooScript.script), but that returns the script as Component rather than Fo.
+            var fooInstance = fooScript.AddTo(gameObject);
+            fooInstance.LogFoo();
+
+            var barInstance = barScript.AddTo(gameObject);
+            barInstance.LogBar();
+
             foreach (var comp in components) {
-                gameObject.AddComponent(comp.script);
+                comp.AddTo(gameObject);
             }
         }
     }
@@ -31,11 +38,11 @@ namespace RuntimeScriptField.Example
     [System.Serializable]
     public class FooReference : ScriptReference<Foo> { }
 
-    //I guess somebody might do this?
-    public class What_The_Face_Dude<T> : ScriptReference<T> where T : Component { }
+    //Prove that this works:
+    public class Generic_Class<T> : ScriptReference<T> where T : Component { }
 
     [System.Serializable]
-    public class BarReference : What_The_Face_Dude<Bar> { }
+    public class BarReference : Generic_Class<Bar> { }
 }
 
 [System.Serializable]
@@ -44,7 +51,7 @@ public class FooReference : ScriptReference<Foo> { }
 public class Example2 : MonoBehaviour
 {
     public FooReference fooRef;
-    
+
     void Start() {
         Debug.Log("The script you assigned to fooRef is: " + fooRef.script);
     }
