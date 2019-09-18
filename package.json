@@ -1,10 +1,23 @@
 {
-  "name": "basteraingames.runtimescriptfieldunity",
-  "displayName": "RuntimeScriptField_Unity",
-  "version": "1.0.0",
+  "name": "com.baste.runtimescripfield",
+  "displayName": "Runtime Script Field",
+  "version": "2.0.0",
+  "unity": "2018.4",
+  "keywords": [
+    "serialization",
+    "scripting"
+  ],
   "description": "A utility for Unity allowing you to assign scripts in the editor, and add them to game objects at runtime.",
   "author": {
-    "name": "Baste-RainGames"
+    "name": "Baste Nesse Buanes"
+    "email": "baste@rain-games.com",
+    "url": "https://github.com/Baste-RainGames/RuntimeScriptField_Unity"
   },
-  "type": "library"
+  "samples": [
+    {
+      "displayName": "Examples",
+      "description": "Some examples of how to use Runtime Script Field. Includes an example scene with some pre-assigned scripts.",
+      "path": "Samples~/Examples"
+    }
+   ]
 }
