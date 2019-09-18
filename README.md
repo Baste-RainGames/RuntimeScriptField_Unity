@@ -4,7 +4,7 @@ A utility for Unity allowing you to assign scripts in the editor, and add them t
 ## Installation
 The package branch is setup to be used as UPM package, simply add the following line as a dependency in your project manifest.
 ```json
-"com.baste.runtimescripfield": "https://github.com/Baste-RainGames/RuntimeScriptField_Unity.git#package"
+"com.baste.runtimescripfield": "https://github.com/Baste-RainGames/RuntimeScriptField_Unity.git"
 ```
 If you're using an older version of Unity than 2018.4, you can copy the Runtime and Editor folders to your Unity project.
 
